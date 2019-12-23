@@ -20,8 +20,17 @@ public class User {
 	private String lastName;
 	private String emailId;
 	private String aadharCard;
-	private int phoneNumer;
+	private String phoneNumer;
 	private String userName;
+	private String password;
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public Long getId() {
 		return id;
@@ -63,11 +72,11 @@ public class User {
 		this.aadharCard = aadharCard;
 	}
 
-	public int getPhoneNumer() {
+	public String getPhoneNumer() {
 		return phoneNumer;
 	}
 
-	public void setPhoneNumer(int phoneNumer) {
+	public void setPhoneNumer(String phoneNumer) {
 		this.phoneNumer = phoneNumer;
 	}
 

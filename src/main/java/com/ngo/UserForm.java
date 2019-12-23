@@ -7,11 +7,29 @@ public class UserForm {
 	private String lastName;
 	private String emailId;
 	private String aadharCard;
-	private int phoneNumer;
+	private String phoneNumer;
 	private String userName;
+	private String password;
+	private String errorMessage;
 
 	public Long getId() {
 		return id;
+	}
+
+	public String getErrorMessage() {
+		return errorMessage;
+	}
+
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public void setId(Long id) {
@@ -50,11 +68,12 @@ public class UserForm {
 		this.aadharCard = aadharCard;
 	}
 
-	public int getPhoneNumer() {
+
+	public String getPhoneNumer() {
 		return phoneNumer;
 	}
 
-	public void setPhoneNumer(int phoneNumer) {
+	public void setPhoneNumer(String phoneNumer) {
 		this.phoneNumer = phoneNumer;
 	}
 
