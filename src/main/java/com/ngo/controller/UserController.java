@@ -25,6 +25,7 @@ public class UserController {
 	@CrossOrigin(origins = "http://localhost:4200")
 	@RequestMapping(value = "/getUserDetails", method = RequestMethod.GET)
 	public ResponseEntity<UserForm> getUserDetails(@RequestParam(name = "userName") String userName) {
+		//dcumenting what this method does
 		UserForm userForm = userService.getUserByUserName(userName);
 		if (userForm.getErrorMessage() != null) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(userForm);
